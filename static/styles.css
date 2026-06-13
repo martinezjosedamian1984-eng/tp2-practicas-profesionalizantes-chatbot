@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Para aplicar CSS a los elementos del DOM: etiqueta, ID o clase */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url("/static/img/fondo.png?v=2");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+#chat {
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    /* Cuadro de chat más grande */
+    margin: 20px auto;
+    border: 1px solid #444;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+
+.entrada {
+    margin: 20px;
+}
+
+.entrada input {
+    padding: 15px;
+    width: 70%;
+    max-width: 500px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.entrada button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.entrada button:hover {
+    background-color: #0056b3;
+}
+
+.subtitulo {
+    color: #d6d6d6;
+    font-size: 18px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.ayuda {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.ayuda span {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.ayuda button {
+    background-color: #1f6feb;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    margin: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ayuda button:hover {
+    background-color: #388bfd;
+    transform: scale(1.05);
+}
+
+.mensaje {
+    max-width: 80%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 14px;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+.usuario {
+    background-color: #1f6feb;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+}
+
+.bot {
+    background-color: #222831;
+    color: #f1f1f1;
+    margin-right: auto;
+    text-align: left;
+    border: 1px solid #3a3f47;
+}
+.boton-limpiar {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 7px 12px;
+    margin: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton-limpiar:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+h1 {
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.subtitulo {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #d6d6d6;
+    font-size: 18px;
+}
+
+.ayuda {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}

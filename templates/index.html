@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComercioJoyDami - Bot Data Analyst</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>ComercioJoyDami</h1>
+    <p class="subtitulo">Bot interno de análisis de productos, stock y ventas</p>
+    <div class="ayuda">
+    <span>Probá:</span>
+    <button onclick="ponerTexto('productos con stock bajo')">Stock bajo</button>
+    <button onclick="ponerTexto('productos más caros')">Más caros</button>
+    <button onclick="ponerTexto('stock total por categoría')">Stock por categoría</button>
+    <button type="button" class="boton-limpiar" onclick="limpiarChat()">Limpiar chat</button>
+    <button onclick="ponerTexto('resumen general')">Resumen general</button>
+    <button onclick="ponerTexto('reponer stock')">Reponer stock</button>
+    <button onclick="ponerTexto('ayuda')">Ayuda</button>   
+    <button onclick="ponerTexto('estado del negocio')">Estado negocio</button>
+    </div>
+    <div id="chat"></div>
+
+    <div class="entrada">
+        <input type="text" id="Mensaje" placeholder="Escribe tu mensaje">
+        <button onclick="enviarMensaje()">Enviar</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
